@@ -1,4 +1,4 @@
 # tools
 
 ## image_split.py
-Spliting a image into pieces.
+Spliting an image into pieces.
