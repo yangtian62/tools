@@ -10,7 +10,6 @@ ap.add_argument('-sz', '--size', type=int, default=256, help='needed size of ima
 ap.add_argument('-st', '--stride', type=int, default=100, help='stride of window')
 args = vars(ap.parse_args())
 
-
 def split_image(load_path, save_path, size, stride):
     images = []
     t = 0
@@ -33,5 +32,6 @@ def split_image(load_path, save_path, size, stride):
         print('Get %d images.'%j)
         t += j
 
-    print('You get %d images!'%t)
+    print('You get %d images in total!'%t)
+    
 split_image(args['image'], args['save'], args['size'], args['stride'])
